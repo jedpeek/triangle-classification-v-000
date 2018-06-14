@@ -18,7 +18,7 @@ attr_accessor :side1, :side2, :side3
 
   class TriangleError < StandardError
     if @side1 <= 0 || @side2 <= 0 || @side3 <= 0
-      #Raise Error
+      #Raise Error Negative Sides
     elsif @side1 + @side2 <= @side3 || @side2 + @side3 <= @side1 || @side1 + @side3 <= @side2
       #Raise Error Triangle Inequality
     end
