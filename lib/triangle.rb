@@ -6,10 +6,8 @@ attr_accessor :side1, :side2, :side3
     @side3 = side3
   end
 
+  class TriangleError
   def kind
-    if @side1 <= 0 || @side2 <= 0 || @side3 <= 0
-      #Raise Error
-    end
     if @side1 == @side2 && @side2 == @side3
       :equilateral
     elsif @side1 == @side2 || @side2 == @side3 || @side1 == @side3
